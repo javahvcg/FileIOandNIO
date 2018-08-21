@@ -23,7 +23,7 @@ public class DemoCopyFileUsingFilesClass {
 
     public static void main(String[] args) throws IOException {
         Path oldFile = Paths.get("src/app/", "data1.txt");
-        String txt = "To be or not to be? ";
+        String txt = "To be or not to be?";
         Path newFile = Paths.get("src/app/", "copy-data1.txt");
         try {
             Files.write(oldFile, txt.getBytes());
